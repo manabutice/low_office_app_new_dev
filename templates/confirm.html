@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}予約確認{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/confirmation.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="confirmation-wrapper">
+    <h2>予約確認</h2>
+    <div class="confirmation-details">
+        <p><strong>予約者名:</strong> {{ reservation.name }}</p>
+        <p><strong>メールアドレス:</strong> {{ reservation.email }}</p>
+        <p><strong>予約日:</strong> {{ reservation.date }}</p>
+        <p><strong>予約時間:</strong> {{ reservation.time }}</p>
+        <p class="confirmation-message">予約が完了しました。</p>
+    </div>
+    <a href="/" class="button">ホームに戻る</a>
+</div>
+{% endblock %}

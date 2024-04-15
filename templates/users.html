@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}ユーザー一覧{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/users.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="table-wrapper">
+    <h2>ユーザー一覧</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>名前</th>
+                <th>メールアドレス</th>
+                <th>予約日</th>
+                <th>予約時間</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users.items %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td
+                <td>{{ user.email }}</td>
+                <td>{{ user.date }}</td>
+                <td>{{ user.time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>

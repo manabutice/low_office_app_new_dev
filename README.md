@@ -16,17 +16,16 @@ Flaskでは、HTMLファイルは通常このフォルダに配置されます�
 この構成では、app.py がアプリケーションの起動点であり、templates および static フォルダはそれぞれHTMLテンプレートと静的ファイルを格納するために使用されます。各テンプレートはCSSファイルをリンクするために <link> タグ内で url_for('static', filename='css/該当するCSSファイル名') を使用して、CSSパスを指定します。
 
 # ディレクトリ構造
-/low_office_app
-    /static
-        /css
-            base.css           # 基本スタイル
-            form.css           # 予約フォーム専用スタイル
-            confirmation.css   # 予約確認ページ専用スタイル
-            users.css          # ユーザー一覧ページ専用スタイル
-    /templates
-        base.html              # 全ページ共通のベーステンプレート
-        form.html              # 予約フォームテンプレート
-        confirm.html           # 予約確認ページテンプレート
-        users.html             # ユーザー一覧ページテンプレート
-    app.py                     # Flaskアプリケーションのメインファイル
-
+ * /low_office_app
+  *  /static
+   *     /css
+    *        base.css           # 基本スタイル
+     *       form.css           # 予約フォーム専用スタイル
+      *      confirmation.css   # 予約確認ページ専用スタイル
+       *     users.css          # ユーザー一覧ページ専用スタイル
+  *  /templates
+   *     base.html              # 全ページ共通のベーステンプレート
+    *    form.html              # 予約フォームテンプレート
+     *   confirm.html           # 予約確認ページテンプレート
+      *  users.html             # ユーザー一覧ページテンプレート
+  * app.py                     # Flaskアプリケーションのメインファイル

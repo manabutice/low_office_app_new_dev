@@ -1,0 +1,19 @@
+/* ユーザー一覧ページのスタイリング */
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.page-button:hover {
+  background-color: #0056b3;
+}
