@@ -29,3 +29,4 @@ Flaskでは、HTMLファイルは通常このフォルダに配置されます�
      *   confirm.html           # 予約確認ページテンプレート
       *  users.html             # ユーザー一覧ページテンプレート
   * app.py                     # Flaskアプリケーションのメインファイル
+  heroku git:remote -a git@github.com:manabutice/low_office_app_new_dev.git
